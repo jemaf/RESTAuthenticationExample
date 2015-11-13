@@ -11,11 +11,16 @@ function checkAuthorizationKey($key) {
     return false;
 }
 
+/*
+ * Função que gera chave de autorização
+ */
 function generateAuthorizationKey($login, $password) {
     return $login . $password;
 }
 
-
+/*
+ * Função que verifica se usuário está cadastrado
+ */
 function checkCredentials($user) {
     return $user->login == "teste" && $user->password == "teste";
 }
