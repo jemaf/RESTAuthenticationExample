@@ -1,0 +1,10 @@
+<div>
+    <p ng-show="errorMessage">{{errorMessage}}</p>
+    <form ng-submit="loginCtrl.loginAction()">
+        Login <br>
+        <input type="text" ng-model="loginCtrl.login" /> <br>
+        Senha <br>
+        <input type="password" ng-model="loginCtrl.password" /> <br> <br>
+        <input type="submit" value="Log in" />
+    </form>
+</div>
